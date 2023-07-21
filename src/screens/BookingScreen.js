@@ -39,15 +39,15 @@ const BookingScreen = ({navigation}) => {
   return (
     <Wrapper navigation={navigation}>
       <View style={styles.cont}>
-        <Text style={styles.title}>Booking Table</Text>
-        <Text style={styles.detailText}>Order details</Text>
+        <Text style={styles.title}>Mesa de reserva</Text>
+        <Text style={styles.detailText}>Detalles del pedido</Text>
         <View style={styles.detailsBlock}>
-          <TextInput placeholder={'Name'} style={styles.input} />
-          <TextInput placeholder={'Phone'} style={styles.input} />
-          <TextInput placeholder={'Email'} style={styles.input} />
+          <TextInput placeholder={'Nombre'} style={styles.input} />
+          <TextInput placeholder={'Teléfono'} style={styles.input} />
+          <TextInput placeholder={'Correo electrónico'} style={styles.input} />
           <Text style={styles.renderDate}>{renderDate}</Text>
           <Button
-            title={renderDate ? 'Change date' : 'Choose date'}
+            title={renderDate ? 'Cambiar fecha' : 'Cambiar fecha'}
             onPress={() => setOpen(true)}
           />
           <DatePicker
@@ -64,7 +64,7 @@ const BookingScreen = ({navigation}) => {
           />
         </View>
         <TouchableOpacity style={styles.btn} onPress={() => setDone(true)}>
-          <Text style={styles.btnText}>Complete order</Text>
+          <Text style={styles.btnText}>Orden completa</Text>
         </TouchableOpacity>
         {done && (
           <View style={styles.done}>

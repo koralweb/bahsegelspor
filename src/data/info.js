@@ -1,5 +1,5 @@
 const info = {
-  currency: '$',
+  currency: '€',
 };
 
 export default info;

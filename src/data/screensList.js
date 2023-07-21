@@ -7,27 +7,27 @@ import CartScreen from '../screens/CartScreen';
 const screensList = [
   {
     name: 'Home',
-    title: 'Главная',
+    title: 'Pagina principal',
     component: HomeScreen,
   },
   {
     name: 'Market',
-    title: 'Магазин',
+    title: 'Comercio',
     component: MarketScreen,
   },
   {
     name: 'Booking',
-    title: 'Бронь столика',
+    title: 'Reserva de mesa',
     component: BookingScreen,
   },
   {
     name: 'Transl',
-    title: 'Трансляции',
+    title: 'Transmisiones',
     component: TranslScreen,
   },
   {
     name: 'Cart',
-    title: 'Корзина',
+    title: 'Carro',
     component: CartScreen,
   },
 ];

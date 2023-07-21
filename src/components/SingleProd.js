@@ -39,7 +39,9 @@ const SingleProd = ({prod, setSingleProduct}) => {
           backgroundColor: isAdded() ? '#20E300' : colors.blue,
         }}
         onPress={() => products.addProduct(prod.id, 1)}>
-        <Text style={styles.btnText}>{isAdded() ? 'Done' : 'Add to cart'}</Text>
+        <Text style={styles.btnText}>
+          {isAdded() ? 'Hecho' : 'Añadir a la cesta'}
+        </Text>
       </TouchableOpacity>
     </View>
   );

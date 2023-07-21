@@ -23,7 +23,7 @@ const OrderPopup = ({setDone}) => {
   return (
     <View style={styles.cont}>
       <View style={styles.orderBlock}>
-        <Text>Show this code to oficiant</Text>
+        <Text>Muéstrale este código al mesero</Text>
         <Image source={require('../assets/barcode.png')} />
         <View style={styles.codeBlock}>{renderCode()}</View>
         <TouchableOpacity onPress={() => setDone(false)}>
