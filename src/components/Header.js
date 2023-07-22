@@ -10,13 +10,17 @@ const Header = ({menu, setMenu, navigation}) => {
     <View style={styles.cont}>
       {routeName !== 'Home' && (
         <TouchableOpacity onPress={() => setMenu(!menu)}>
-          <FontAwesomeIcon icon={menu ? 'close' : 'bars'} />
+          <FontAwesomeIcon
+            icon={menu ? 'close' : 'bars'}
+            size={30}
+            color={'grey'}
+          />
         </TouchableOpacity>
       )}
       <TouchableOpacity
         style={{marginLeft: 'auto'}}
         onPress={() => navigation.push('Cart')}>
-        <FontAwesomeIcon icon={'shopping-cart'} />
+        <FontAwesomeIcon icon={'shopping-cart'} size={30} color={'grey'} />
       </TouchableOpacity>
     </View>
   );
@@ -24,7 +28,7 @@ const Header = ({menu, setMenu, navigation}) => {
 
 const styles = StyleSheet.create({
   cont: {
-    paddingTop: 35,
+    paddingTop: 40,
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingHorizontal: 20,
